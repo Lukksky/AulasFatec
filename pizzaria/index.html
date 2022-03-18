@@ -1,0 +1,70 @@
+<html>
+ <head>
+ <title>Pizzaria</title>
+ <meta charset="UTF-8">
+ </head>
+ <body>
+ <h1>Pizzaria</h1>
+ <h2>Monte a sua pizza</h2>
+ <form action="9-pizzaria-resultado.php" method="post">
+ <p>Ingredientes:</p>
+ <?php
+ for ($i = 1; $i <= 5; $i++) {
+ ?>
+ <p>
+ <?php echo $i. ". "; ?>
+
+ <select name="Ingrediente
+ <?php echo $i; ?>">
+ <option value="0">(Nenhum)</option>
+ <option value="1">Mussarela</option>
+ <option value="2">Calabresa</option>
+ <option value="3">Catupiry</option>
+ <option value="4">Aliche</option>
+ <option value="5">Frango</option>
+ <option value="6">Milho</option>
+ <option value="7">Atum</option>
+ <option value="8">Tomate</option>
+ <option value="9">Presunto</option>
+
+ </select>
+ </p>
+
+ <?php
+ }
+ ?>
+
+ <p>
+     <input type="submit" value="Calcular o preço">
+ </p>
+ <!-- OUTRO METODO DINAMICO DE SELEÇÃO-->
+<!--
+ <form action="9-pizzaria-resultado.php"
+ method="post">
+ <p>Ingredientes:</p>
+ <?php 
+ for ($i = 1; $i <= 5; $i++) {
+ echo "<p>". $i. ". ". 
+"<select name='Ingrediente$i'>".
+"<option value='0'>(Nenhum)</option>".
+"<option value='1'>Mussarela</option>".
+"<option value='2'>Calabresa</option>".
+"<option value='3'>Catupiry</option>".
+"<option value='4'>Aliche</option>".
+"<option value='5'>Frango</option>".
+"<option value='6'>Milho</option>".
+"<option value='7'>Atum</option>".
+"<option value='8'>Tomate</option>".
+"<option value='9'>Presunto</option>".
+"</select>".
+"</p>";
+ }
+ ?>
+ <p><input type="submit" 
+ value="Calcular o preço">
+ </p>
+-->
+ </form>
+ </form>
+ </body>
+</html>

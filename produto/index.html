@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Produtos</title>
+        <meta charset= "UTF-8">
+
+    </head>
+
+    <body>
+        <h1>Produtos</h1>
+        <p>
+            Criar  uma  aplicação  em PHPque  receba  através da digitação    dos    dados    em    um    formulário    o    
+            nome, quantidade, preço unitário e desconto de um determinado produto.    Em    seguida,    deve-se
+            criar   uma    página   de resultado que exiba o nome do produto e o seu preço total através  da  aplicação  
+            da  seguinte  fórmula:  Preço  Total  = (Quantidade * PreçoUnitário) –Desconto.
+        </p>
+       <form action="produtos.php" method="post">
+
+       <p>
+           Nome do produto:
+           <input type="text" name="produto">
+       </p>
+       <p>
+           Quantidade: 
+           <input type="text" name="quantidade">
+       </p>
+       <p>
+           Preço unitário: R$
+           <input type="text" name="unit">
+       </p>
+       <p>
+           Desconto:
+           <input type="text" name="desc">
+       </p>
+       <p>
+           <input value="Calcular" type="submit">
+       </p>
+    </form>
+    </body>
+</html>

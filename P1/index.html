@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+</head>
+<body>
+    <h1>Compras</h1>
+    <p><strong>Desenvolver uma aplicação Web que, usando PHP, determine o preço final de uma compra, a partir dos 
+seguintes dados digitados em um formulário: produto, quantidade e preço unitário. Em seguida, para 
+determinar o preço final, devem-se utilizar os seguintes critérios para cálculo:
+a) O preço total (bruto) é obtido multiplicando o preço unitário com a quantidade (1,5 pontos).
+b) Caso o preço total (bruto) seja superior a R$ 1.250,00 aplicar um desconto de 4,5% (1,5 pontos).
+c) O valor do imposto será obtido através das seguintes faixas (1,5 pontos):
+d) O preço final será obtido somando o preço total (bruto) com o valor do imposto e subtraindo o valor 
+do desconto (1,5 pontos)</strong></p>
+
+<form action="compras.php" method="POST">
+    <div class="dados">
+        Insira o produto escolhido:
+        <input type="text" name="produto">
+    </div>
+<p>
+    <div class="dados">
+        Insira a quantidade do produto:
+        <input type="text" name="quantidade">
+    </div>
+</p>
+
+<p>
+    <div class="dados">
+        Insira o valor unitário do produto:
+        <input type="text" name="valorunit">
+    </div>
+</p>
+
+<p>
+    <input type="submit" value="Calcular">
+</p>
+</form>
+</body>
+</html>

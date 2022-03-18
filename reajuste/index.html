@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Reajuste salarial</title>
+        <meta charset= "UTF-8">
+
+    </head>
+
+    <body>
+
+        <h1>Calcular reajuste</h1>
+
+        <p>A partir do salário e categoria, digitados pelos usuário em um formulárioHTML, elaborar uma página em HTML/PHP que receba 
+            os dados deste formulário e calcule o reajuste de salário baseando-se na tabela a seguir, sendo que o programa deverá aceitar 
+            tanto letras maiúsculas quanto minúsculas para determinar a categoria do funcionário.(0,5 ponto)
+            Reajuste        Categoria
+            10%                 A, C   
+            15%                 B, D, E
+            25%                 F, L
+            35%                 G, H
+            50%                 I, J
+                               
+        </p>
+
+        <p>
+            <form action="reajuste.php" method="POST">
+            Digite o salario: 
+            <input type="text" name="salar">
+        </p>
+
+        <p>
+            Digite a sua categoria: 
+            <input type="text" name="categ">
+        </p>
+
+        <input type="submit" value="Calcular">
+
+        
+    </form>
+    </body>
+
+</html>
